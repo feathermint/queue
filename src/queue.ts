@@ -17,7 +17,7 @@ interface QueueConfig extends SQSClientConfig {
   defaultMaxNumberOfMessages?: number;
 }
 
-export class Queue {
+export class Queue<MessageType = unknown> {
   readonly #client: SQSClient;
   readonly #queueUrl: string;
   readonly #maxNumberOfMessages: number;
@@ -31,7 +31,7 @@ export class Queue {
   }
 
   send(
-    message: unknown,
+    message: MessageType,
     options?: Partial<Omit<SendMessageCommandInput, "MessageBody">>,
   ) {
     const command = new SendMessageCommand({
