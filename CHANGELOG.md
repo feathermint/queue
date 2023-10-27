@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/feathermint/queue/compare/v1.1.0...v1.1.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* export QueueConfig ([fe6e18c](https://github.com/feathermint/queue/commit/fe6e18ce9588edcd2cba4db067af63cdf3afdaa4))
+
 ## [1.1.0](https://github.com/feathermint/queue/compare/v1.0.0...v1.1.0) (2023-09-07)
 
 
