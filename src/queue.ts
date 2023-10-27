@@ -12,7 +12,7 @@ import {
   SendMessageCommandInput,
 } from "@aws-sdk/client-sqs";
 
-interface QueueConfig extends SQSClientConfig {
+export interface QueueConfig extends SQSClientConfig {
   defaultQueueUrl: string;
   defaultMaxNumberOfMessages?: number;
 }
